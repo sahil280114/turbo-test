@@ -12,7 +12,7 @@ ADD requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 # We add the banana boilerplate here
-ADD noserver.py .
+ADD server.py .
 
 # Add your model weight files 
 # (in this case we have a python script)
@@ -25,4 +25,4 @@ ADD app.py .
 
 EXPOSE 8000
 
-CMD python3 -u noserver.py
+CMD python3 -u server.py
